@@ -1,0 +1,333 @@
+:root {
+  /* ### Primary */
+  --Cyan: hsl(180, 66%, 49%);
+  --DarkViolet: hsl(257, 27%, 26%);
+  /* ### Secondary */
+  --Red: hsl(0, 87%, 67%);
+  /* ### Neutral */
+  --Gray: hsl(0, 0%, 75%);
+  --GrayishViolet: hsl(257, 7%, 63%);
+  --VeryDarkBlue: hsl(255, 11%, 22%);
+  --VeryDarkViolet: hsl(260, 8%, 14%);
+
+  /* Font Size */
+  /* Font Size: 1rem = 10px */
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  /* overflow: hidden; */
+}
+
+.btn {
+  background: var(--Cyan);
+  border: none;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.btn-medium {
+  border-radius: 2.5rem;
+  font-size: 1.8rem;
+  padding: 1.5rem 4.5rem;
+}
+
+/* menu */
+nav {
+  align-items: center;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  position: relative;
+  width: 90%;
+}
+
+nav .mobile-menu {
+  display: block;
+  height: 26px;
+  width: 30px;
+}
+
+nav .mobile-menu span {
+  background: var(--GrayishViolet);
+  display: block;
+  height: 4px;
+  margin-bottom: 5px;
+  width: 25px;
+}
+
+nav .mobile-menu span:last-child {
+  margin-bottom: 0;
+}
+
+nav .desktop-menu {
+  background: var(--DarkViolet);
+  border-radius: 1rem;
+  bottom: 0;
+  display: none;
+  height: 35rem;
+  position: absolute;
+  text-align: center;
+  top: 40px;
+  width: 100%;
+}
+
+nav .desktop-menu li {
+  color: #ffffff;
+  font-weight: 700;
+  list-style: none;
+  margin-top: 3rem;
+}
+
+nav .desktop-menu button {
+  border-radius: 2rem;
+  margin-top: 2rem;
+  padding: 1rem 9rem;
+}
+
+hr {
+  margin: 0 auto;
+  margin-top: 3rem;
+  width: 90%;
+}
+
+/* -----------hero------------- */
+.hero .hero-img {
+  background-image: url(../img/illustration-working.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 33rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  width: 354px;
+}
+
+.hero .hero-title {
+  margin: 0 auto;
+  margin-bottom: 8rem;
+  text-align: center;
+  width: 90%;
+}
+
+.hero .hero-title h1 {
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+.hero .hero-title p {
+  color: var(--Gray);
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+/* ---------form------------ */
+.information {
+  background-color: #f0f1f6;
+  background-size: auto;
+  margin-top: 20rem;
+  box-sizing: border-box;
+  padding-bottom: 4rem;
+}
+
+.information .form-content {
+  background-color: var(--DarkViolet);
+  background-image: url(../img/bg-shorten-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  border-radius: 0.5rem;
+  height: 160px;
+  margin: 0 auto;
+  position: relative;
+  top: -8rem;
+  width: 90%;
+}
+
+.information .form-content form {
+  height: inherit;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.form-content .url {
+  border: none;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  padding: 1.3rem 6.6rem;
+}
+
+.form-content button {
+  border-radius: 0.5rem;
+  padding: 1.2rem 8.7rem;
+}
+
+/* ------information-links------------- */
+.information .information-links {
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+}
+
+.information .information-links p {
+  color: var(--Gray);
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+/* -----------card-information------------ */
+.information .card-information {
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  height: 250px;
+  margin: 0 auto;
+  margin-top: 8rem;
+  position: relative;
+  text-align: center;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.information .card-information:last-child {
+  margin-bottom: 4rem;
+}
+
+.information .line {
+  margin: 0 auto;
+  width: 30px;
+}
+
+.information .line span {
+  background-color: var(--Cyan);
+  margin-left: 1rem;
+  padding: 4.5rem 0.5rem;
+}
+
+.information .card-information .card-img {
+  background-color: var(--VeryDarkBlue);
+  border-radius: 50%;
+  height: 80px;
+  left: calc(50% - 4rem);
+  position: absolute;
+  top: -4rem;
+  width: 80px;
+}
+
+.card-information .card-img img {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.card-information .card-text {
+  margin-top: 5rem;
+}
+
+.card-information .card-text p {
+  color: var(--Gray);
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 90%;
+}
+
+/* ----------link-description------------- */
+.link-description {
+  background-color: var(--VeryDarkBlue);
+  background-image: url(../img/bg-boost-mobile.svg);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+}
+
+.link-description .text-link {
+  height: inherit;
+  margin: 0 auto;
+  margin-top: 10rem;
+  text-align: center;
+  width: 90%;
+}
+
+.text-link h2 {
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+/* --------footer------------ */
+footer {
+  background: var(--VeryDarkViolet);
+  display: flex;
+  flex-direction: column;
+}
+
+footer .wrapper {
+  margin: 0 auto;
+  width: 90%;
+}
+
+footer .logo-footer {
+  margin-bottom: 4rem;
+  margin-left: 32%;
+  margin-top: 6rem;
+  width: max-content;
+}
+
+footer .footer-info {
+  color: #fffeff;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+footer .footer-info h4 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+footer .footer-info li {
+  color: var(--Gray);
+  font-size: 1.6rem;
+  line-height: 2.5;
+  list-style: none;
+}
+
+footer .footer-icons {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  justify-content: center;
+}
+
+footer .footer-icons img {
+  margin-right: 3rem;
+}
+
+footer .attribution {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+footer .attribution p {
+  color: var(--Cyan);
+}
+
+footer .attribution a {
+  color: #fffeff;
+}
