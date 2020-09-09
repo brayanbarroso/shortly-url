@@ -54,81 +54,89 @@
 
     <section class="information">
       <div class="form-content">
-        <form action="">
+        <form id="shortener" method="POST" class="shortener">
           <input
-            type="text"
+            type="url"
             name="url"
             id="url"
-            class="url"
+            class="input"
             placeholder="Shorten a link here"
+            required
           />
-          <button class="btn">Shorten It!</button>
+          <figure class="loader hide"></figure>
+          <div class="error"></div>
+          <button type="submit" class="btn" id="shorten">Shorten It!</button>
         </form>
-      </div>
-      <div class="information-links">
-        <h2>Advanced Statistics</h2>
-        <p>
-          Track how your links are performing across the web with our Advanced
-          statistics dashboard.
-        </p>
-      </div>
-      <div class="card-link">
-        <article class="card-information">
-          <div class="card-img">
-            <img
-              src="./asset/img/icon-brand-recognition.svg"
-              alt="brand recognition"
-            />
-          </div>
-          <div class="card-text">
-            <h3>Brand Recognition</h3>
-            <p>
-              Boost your brand recognition with each click. Generic links don`t
-              mean a thing. Breaded links help instil confidence in your
-              content.
-            </p>
-          </div>
-        </article>
-        <div class="line">
-          <span></span>
+        <div id="shortenedUrlsContainer" class="shortened-urls">
+          <!-- Shortened URLs render -->
         </div>
-        <article class="card-information">
-          <div class="card-img">
-            <img
-              src="./asset/img/icon-detailed-records.svg"
-              alt="detailed-records"
-            />
-          </div>
-          <div class="card-text">
-            <h3>Detailed Records</h3>
-            <p>
-              Gain insights into who is clicking your links. Knowing when and
-              where people engage with your content helps inform better
-              decisions.
-            </p>
-          </div>
-        </article>
-
-        <div class="line">
-          <span></span>
-        </div>
-
-        <article class="card-information">
-          <div class="card-img">
-            <img
-              src="./asset/img/icon-fully-customizable.svg"
-              alt="brand recognition"
-            />
-          </div>
-          <div class="card-text">
-            <h3>Fully Customizable</h3>
-            <p>
-              Improve brand awareness and content discoverability through
-              customizable links, supercharging audience engagement.
-            </p>
-          </div>
-        </article>
       </div>
+      <section>
+        <div class="information-links">
+          <h2>Advanced Statistics</h2>
+          <p>
+            Track how your links are performing across the web with our Advanced
+            statistics dashboard.
+          </p>
+        </div>
+        <div class="card-link">
+          <article class="card-information">
+            <div class="card-img">
+              <img
+                src="./asset/img/icon-brand-recognition.svg"
+                alt="brand recognition"
+              />
+            </div>
+            <div class="card-text">
+              <h3>Brand Recognition</h3>
+              <p>
+                Boost your brand recognition with each click. Generic links
+                don`t mean a thing. Breaded links help instil confidence in your
+                content.
+              </p>
+            </div>
+          </article>
+          <div class="line">
+            <span></span>
+          </div>
+          <article class="card-information">
+            <div class="card-img">
+              <img
+                src="./asset/img/icon-detailed-records.svg"
+                alt="detailed-records"
+              />
+            </div>
+            <div class="card-text">
+              <h3>Detailed Records</h3>
+              <p>
+                Gain insights into who is clicking your links. Knowing when and
+                where people engage with your content helps inform better
+                decisions.
+              </p>
+            </div>
+          </article>
+
+          <div class="line">
+            <span></span>
+          </div>
+
+          <article class="card-information">
+            <div class="card-img">
+              <img
+                src="./asset/img/icon-fully-customizable.svg"
+                alt="brand recognition"
+              />
+            </div>
+            <div class="card-text">
+              <h3>Fully Customizable</h3>
+              <p>
+                Improve brand awareness and content discoverability through
+                customizable links, supercharging audience engagement.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
     </section>
 
     <section class="link-description">
@@ -190,5 +198,7 @@
         </p>
       </div>
     </footer>
+
+    <script src="./asset/js/app.js"></script>
   </body>
 </html>
