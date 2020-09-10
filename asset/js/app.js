@@ -129,7 +129,7 @@ function renderShortenedUrl(data, origin) {
       urlRender.querySelector(".button--copy").disabled = false;
     }, 1500);
   });
-  $shortener.querySelector(".loader").classList.add("hide");
+
   addLocalStorage(hash, url, origin);
 }
 
@@ -152,16 +152,17 @@ function shortenUrl(event) {
     if (url.match(regex)) {
       $shortener.querySelector(".error").textContent = "";
       $shortener.querySelector(".input").classList.remove("error-input");
-      $shortener.querySelector(".loader").classList.remove("hide");
       getData(url, "new");
     } else {
       $shortener.querySelector(".error").textContent =
         "Please enter a valid link";
       $shortener.querySelector(".input").classList.add("error-input");
+      $shorten.style.marginTop = "0";
     }
   } else {
     $shortener.querySelector(".error").textContent = "Please enter a link";
     $shortener.querySelector(".input").classList.add("error-input");
+    $shorten.style.marginTop = "0";
   }
 }
 
