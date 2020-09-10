@@ -209,8 +209,10 @@ hr {
 
 /*-------------- shortened-urls------------- */
 .shortened-urls {
+  margin: 0 auto;
   margin-bottom: 5rem;
   margin-top: 1rem;
+  width: 80%;
 }
 
 .shortened-urls .url-container {
@@ -275,6 +277,7 @@ hr {
 .information .container-infomation {
   margin-top: 10rem;
 }
+
 .information .information-links {
   margin: 0 auto;
   text-align: center;
@@ -527,7 +530,7 @@ footer .attribution a {
   /*------------------ information----------------- */
   .information .form-content {
     background-image: url(../img/bg-shorten-desktop.svg);
-    width: 70%;
+    width: 80%;
   }
 
   /* --------------------Formulario------------------ */
@@ -588,6 +591,8 @@ footer .attribution a {
   }
 
   /* ------information-links------------- */
+  .information .container-infomation {
+  }
   .information .information-links {
     margin-bottom: 10rem;
     width: 80%;

@@ -93,7 +93,7 @@ function renderShortenedUrl(data, origin) {
   // Render shortened URL
   const { hashid: hash, url } = data;
   const urlTemplate = template(hash, url);
-  console.log(urlTemplate);
+
   checkRender(hash);
   $shortenedUrlsContainer.insertAdjacentHTML("afterbegin", urlTemplate);
 
